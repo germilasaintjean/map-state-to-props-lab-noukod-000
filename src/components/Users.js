@@ -18,6 +18,6 @@ const mapStateToProps = (state) => {
   console.log(state)
   return { users: state.users }
 }
- 
+
 
 export default connect (mapStateToProps) (Users);
