@@ -14,5 +14,10 @@ class Users extends Component {
 }
 
 //add mapStateToProps here
+const mapStateToProps = (state) => {
+  console.log(state)
+  return { users: state.users }
+}
+ 
 
-export default Users
+export default connect (mapStateToProps) (Users);
